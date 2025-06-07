@@ -1,7 +1,0 @@
-#!/bin/bash
-
-ls -la
-
-cd ~/wollok_kernel/wollok_bridge || exit
-
-npm install
