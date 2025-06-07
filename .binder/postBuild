@@ -10,6 +10,3 @@ cat > "$KERNEL_DIR/kernel.json" <<EOF
   "language": "python"
 }
 EOF
-
-cd ~/.wollok-kernel || exit 1
-npm install
