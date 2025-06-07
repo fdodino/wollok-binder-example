@@ -1,7 +1,10 @@
 #!/bin/bash
 set -eux
 
-KERNEL_DIR=$(jupyter kernelspec list | grep wollok | awk '{print $2}')
+pip install wollok-kernel
+
+KERNEL_DIR=$(jupyter kernelspec list | awk '/wollok/ {print $2}')
+test -d "$KERNEL_DIR"
 
 cat > "$KERNEL_DIR/kernel.json" <<EOF
 {
