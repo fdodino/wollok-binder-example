@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ~/.wollok_kernel/wollok_bridge || exit
+cd ./wollok_kernel/wollok_bridge || exit
 
 npm install
